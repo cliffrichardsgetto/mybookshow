@@ -13,7 +13,11 @@ import "slick-carousel/slick/slick-theme.css";
 import  PlayPage  from './pages/Play.page';
 import  MoviePage  from './pages/Movie.page';
 import  HomePage  from './pages/Home.page';
+import axios from 'axios';
 
+axios.defaults.baseURL="https://api.themoviedb.org/3";
+axios.defaults.params={};
+axios.defaults.params["api_keys"]=process.env.REACT_APP_API_KEY; 
 function App() {
   return (
     <Routes>
