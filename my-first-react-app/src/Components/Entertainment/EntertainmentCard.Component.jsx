@@ -9,7 +9,7 @@ const EntertainmentCard =( props)  => {
         <img className='w-full h-full rounded-lg' src={props.src} alt='entertainment'/>
     </div>
   </> 
-}
+}upstream
 
 const EntertainmentCardSlider=() =>{
     const EntertainmentImage =[
